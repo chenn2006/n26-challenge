@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.chennuru.n26.challenge.business.util.DateUtilTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE! - in org.chennuru.n26.challenge.business.util.DateUtilTest
+convertToLocalDateTime(org.chennuru.n26.challenge.business.util.DateUtilTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<2017-10-01T09:45:30> but was:<2017-10-01T15:15:30>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.chennuru.n26.challenge.business.util.DateUtilTest.convertToLocalDateTime(DateUtilTest.java:13)
+

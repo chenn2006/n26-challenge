@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.chennuru.n26.challenge.presentation.controller.TransactionControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.463 sec <<< FAILURE! - in org.chennuru.n26.challenge.presentation.controller.TransactionControllerTest
+postTransaction(org.chennuru.n26.challenge.presentation.controller.TransactionControllerTest)  Time elapsed: 0.443 sec  <<< FAILURE!
+java.lang.AssertionError: Status expected:<201> but was:<204>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:54)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:81)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers$10.match(StatusResultMatchers.java:664)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at org.chennuru.n26.challenge.presentation.controller.TransactionControllerTest.postTransaction(TransactionControllerTest.java:40)
+

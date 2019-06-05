@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.chennuru.n26.challenge.business.service.TransactionServiceTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.01 sec <<< FAILURE! - in org.chennuru.n26.challenge.business.service.TransactionServiceTest
+processExpired(org.chennuru.n26.challenge.business.service.TransactionServiceTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.Exception: Unexpected exception, expected<org.chennuru.n26.challenge.exception.TransactionExpiredException> but was<org.chennuru.n26.challenge.exception.TransactionOutOfFutureWindow>
+	at org.chennuru.n26.challenge.business.service.impl.StatisticServiceImpl.add(StatisticServiceImpl.java:109)
+	at org.chennuru.n26.challenge.business.service.impl.TransactionServiceImpl.process(TransactionServiceImpl.java:26)
+	at org.chennuru.n26.challenge.business.service.TransactionServiceTest.processExpired(TransactionServiceTest.java:35)
+
+processOk(org.chennuru.n26.challenge.business.service.TransactionServiceTest)  Time elapsed: 0 sec  <<< ERROR!
+org.chennuru.n26.challenge.exception.TransactionOutOfFutureWindow: null
+	at org.chennuru.n26.challenge.business.service.impl.StatisticServiceImpl.add(StatisticServiceImpl.java:109)
+	at org.chennuru.n26.challenge.business.service.impl.TransactionServiceImpl.process(TransactionServiceImpl.java:26)
+	at org.chennuru.n26.challenge.business.service.TransactionServiceTest.processOk(TransactionServiceTest.java:55)
+
